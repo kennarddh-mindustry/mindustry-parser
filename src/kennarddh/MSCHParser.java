@@ -156,9 +156,7 @@ class MSCHParser {
                 tiles[i] = new Stile(blockName, Point2.unpack(position), config, rotation);
             }
 
-            Schematic schematic = new Schematic(ver, tiles, tagsMap, width, height);
-
-            return schematic;
+            return new Schematic(ver, tiles, tagsMap, width, height);
         }
     }
 

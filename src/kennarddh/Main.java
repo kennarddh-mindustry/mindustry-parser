@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         System.out.println("Working Directory = " + System.getProperty("user.dir"));
 
-        Schematic schematic = MSCHParser.parseMSCH("test.msch");
+        Schematic schematic = MSCHParser.parseMSCH("max_metaglass.msch");
 
         System.out.println("Version: " + schematic.version);
         System.out.println("Tags: " + schematic.tags);
